@@ -1,0 +1,96 @@
+{
+	"Sources/Methods/meta_Directory.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 5,
+		"lastSelectedLine": 5,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-10-15T04:20:53.712Z"
+	},
+	"Sources/Methods/map_wildcard.4dm": {
+		"startSelection": 35,
+		"endSelection": 35,
+		"firstSelectedLine": 2,
+		"lastSelectedLine": 2,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-10-15T04:20:53.712Z"
+	},
+	"Sources/Triggers/table_1.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-10-15T04:20:53.713Z"
+	},
+	"Sources/Forms/ORDA/method.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 103,
+		"lastSelectedLine": 103,
+		"folding": [
+			3,
+			118,
+			138
+		],
+		"bookmarks": [],
+		"stamp": "2021-10-15T04:20:53.719Z"
+	},
+	"Sources/Forms/ORDA/ObjectMethods/lb.Directory.4dm": {
+		"startSelection": 9,
+		"endSelection": 9,
+		"firstSelectedLine": 9,
+		"lastSelectedLine": 9,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-10-15T04:20:53.750Z"
+	},
+	"Sources/Forms/ORDA/ObjectMethods/Create.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-10-15T04:20:53.751Z"
+	},
+	"Sources/Forms/ORDA/ObjectMethods/Save#2.4dm": {
+		"startSelection": 7,
+		"endSelection": 7,
+		"firstSelectedLine": 16,
+		"lastSelectedLine": 16,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-10-15T04:20:53.752Z"
+	},
+	"Sources/Forms/ORDA/ObjectMethods/Cancel.4dm": {
+		"startSelection": 23,
+		"endSelection": 0,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-10-15T04:20:53.752Z"
+	},
+	"Sources/Forms/ORDA/ObjectMethods/Save#3.4dm": {
+		"startSelection": 7,
+		"endSelection": 7,
+		"firstSelectedLine": 18,
+		"lastSelectedLine": 18,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-10-15T04:20:53.753Z"
+	},
+	"Sources/Forms/ORDA/ObjectMethods/Cancel1.4dm": {
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 0,
+		"lastSelectedLine": 0,
+		"folding": [],
+		"bookmarks": [],
+		"stamp": "2021-10-15T04:20:53.753Z"
+	}
+}

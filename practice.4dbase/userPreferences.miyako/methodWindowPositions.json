@@ -1,0 +1,62 @@
+{
+	"Sources/Methods/meta_Directory.4dm": {
+		"left": 360,
+		"top": 238,
+		"width": 1087,
+		"height": 669
+	},
+	"Sources/Methods/map_wildcard.4dm": {
+		"left": 216,
+		"top": 188,
+		"width": 936,
+		"height": 862
+	},
+	"Sources/Triggers/table_1.4dm": {
+		"left": 544,
+		"top": 254,
+		"width": 778,
+		"height": 488
+	},
+	"Sources/Forms/ORDA/method.4dm": {
+		"left": 242,
+		"top": 238,
+		"width": 1144,
+		"height": 863
+	},
+	"Sources/Forms/ORDA/ObjectMethods/lb.Directory.4dm": {
+		"left": 407,
+		"top": 411,
+		"width": 1087,
+		"height": 669
+	},
+	"Sources/Forms/ORDA/ObjectMethods/Create.4dm": {
+		"left": 216,
+		"top": 188,
+		"width": 1144,
+		"height": 863
+	},
+	"Sources/Forms/ORDA/ObjectMethods/Save#2.4dm": {
+		"left": 776,
+		"top": 243,
+		"width": 1144,
+		"height": 837
+	},
+	"Sources/Forms/ORDA/ObjectMethods/Cancel.4dm": {
+		"left": 833,
+		"top": 411,
+		"width": 1087,
+		"height": 669
+	},
+	"Sources/Forms/ORDA/ObjectMethods/Save#3.4dm": {
+		"left": 242,
+		"top": 238,
+		"width": 1144,
+		"height": 863
+	},
+	"Sources/Forms/ORDA/ObjectMethods/Cancel1.4dm": {
+		"left": 216,
+		"top": 188,
+		"width": 1144,
+		"height": 863
+	}
+}

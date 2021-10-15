@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="5">
+	<com.4d>
+		<deployment>
+			<options/>
+		</deployment>
+		<database>
+			<cache flush_buffer_delay="20s"/>
+			<misc standard_xpath="false"/>
+		</database>
+		<web>
+			<standalone_server>
+				<configuration session_mode="3" automatic_session_management="true"/>
+			</standalone_server>
+			<remote>
+				<configuration session_mode="3" automatic_session_management="true"/>
+			</remote>
+		</web>
+	</com.4d>
+</preferences>

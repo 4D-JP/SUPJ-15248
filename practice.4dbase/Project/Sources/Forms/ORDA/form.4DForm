@@ -1,0 +1,713 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onClick",
+		"onDataChange",
+		"onAfterEdit",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "レター",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"lb.Directory": {
+					"type": "listbox",
+					"top": 44,
+					"left": 25,
+					"width": 664,
+					"height": 299,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "collection",
+					"movableRows": false,
+					"hideSystemHighlight": true,
+					"hideExtraBlankRows": true,
+					"rowHeight": "20px",
+					"dataSource": "Form:C1466.Directory.col",
+					"currentItemSource": "Form:C1466.Directory.item",
+					"currentItemPositionSource": "Form:C1466.Directory.pos",
+					"selectedItemsSource": "Form:C1466.Directory.sel",
+					"metaSource": "meta_Directory(Form:C1466.Directory.meta.selected; Form:C1466.Directory.meta.unselected)",
+					"scrollbarHorizontal": "automatic",
+					"scrollbarVertical": "automatic",
+					"fill": "#FFFFFF",
+					"alternateFill": "automatic",
+					"method": "ObjectMethods/lb.Directory.4dm",
+					"events": [
+						"onDoubleClick"
+					],
+					"columns": [
+						{
+							"name": "ID#1",
+							"dataSource": "This:C1470.ID",
+							"width": 39,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onLoad",
+								"onDoubleClick"
+							],
+							"header": {
+								"name": "Header1",
+								"text": "ID",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "automatic",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "FN#1",
+							"dataSource": "This:C1470.FN",
+							"width": 108,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onLoad",
+								"onDoubleClick"
+							],
+							"header": {
+								"name": "Header2",
+								"text": "First name",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer2",
+								"stroke": "automatic",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "LN#1",
+							"dataSource": "This:C1470.LN",
+							"width": 120,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onLoad",
+								"onDoubleClick"
+							],
+							"header": {
+								"name": "Header3",
+								"text": "Last name",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer3",
+								"stroke": "automatic",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "Dob#1",
+							"dataSource": "This:C1470.Dob",
+							"width": 188,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"dateFormat": "short",
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "automatic",
+							"textAlign": "left",
+							"verticalAlign": "automatic",
+							"events": [
+								"onLoad",
+								"onDoubleClick"
+							],
+							"header": {
+								"name": "Header4",
+								"text": "Date of birth",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer4",
+								"stroke": "automatic",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						},
+						{
+							"name": "PN#1",
+							"dataSource": "This:C1470.PN",
+							"width": 209,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"resizable": false,
+							"enterable": false,
+							"stroke": "automatic",
+							"fill": "#FFFFFF",
+							"alternateFill": "automatic",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"events": [
+								"onLoad",
+								"onDoubleClick"
+							],
+							"header": {
+								"name": "Header5",
+								"text": "Phone number",
+								"stroke": "automatic",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontWeight": "bold"
+							},
+							"footer": {
+								"name": "Footer5",
+								"stroke": "automatic",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic"
+							}
+						}
+					]
+				},
+				"Create": {
+					"type": "button",
+					"top": 7,
+					"left": 474,
+					"width": 157,
+					"height": 29,
+					"text": "Create a new record",
+					"focusable": false,
+					"method": "ObjectMethods/Create.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"inp": {
+					"type": "input",
+					"top": 13,
+					"left": 25,
+					"width": 176,
+					"height": 17,
+					"dataSource": "Form:C1466.inp",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"And": {
+					"type": "radio",
+					"top": 13,
+					"left": 279,
+					"width": 46,
+					"height": 15,
+					"dataSource": "Form:C1466.And_opt",
+					"text": "And",
+					"focusable": false,
+					"radioGroup": "Group3",
+					"events": [
+						"onClick"
+					]
+				},
+				"Or": {
+					"type": "radio",
+					"top": 13,
+					"left": 226,
+					"width": 36,
+					"height": 15,
+					"dataSource": "Form:C1466.Or_opt",
+					"text": "Or",
+					"focusable": false,
+					"radioGroup": "Group3",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"top": 27,
+					"left": 104,
+					"width": 68,
+					"height": 17,
+					"fontTheme": "main",
+					"text": "ID"
+				},
+				"ID#2": {
+					"type": "input",
+					"top": 27,
+					"left": 249,
+					"width": 131,
+					"height": 16,
+					"dataSource": "Form:C1466.Directory.item.ID",
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"fill": "#C0C0C0",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad"
+					]
+				},
+				"FN#2": {
+					"type": "input",
+					"top": 55,
+					"left": 249,
+					"width": 131,
+					"height": 16,
+					"dataSource": "Form:C1466.Directory.item.FN",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad"
+					]
+				},
+				"LN#2": {
+					"type": "input",
+					"top": 82,
+					"left": 249,
+					"width": 131,
+					"height": 16,
+					"dataSource": "Form:C1466.Directory.item.LN",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Dob#2": {
+					"type": "input",
+					"top": 110,
+					"left": 249,
+					"width": 131,
+					"height": 16,
+					"dataSource": "Form:C1466.Directory.item.Dob",
+					"dataSourceTypeHint": "date",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad"
+					]
+				},
+				"PN#2": {
+					"type": "input",
+					"top": 139,
+					"left": 249,
+					"width": 131,
+					"height": 16,
+					"dataSource": "Form:C1466.Directory.item.PN",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 54,
+					"left": 104,
+					"width": 99,
+					"height": 17,
+					"fontTheme": "main",
+					"text": "First name"
+				},
+				"Text3": {
+					"type": "text",
+					"top": 82,
+					"left": 104,
+					"width": 91,
+					"height": 17,
+					"fontTheme": "main",
+					"text": "Last name"
+				},
+				"Text4": {
+					"type": "text",
+					"top": 110,
+					"left": 104,
+					"width": 104,
+					"height": 17,
+					"fontTheme": "main",
+					"text": "Date of birth"
+				},
+				"Text5": {
+					"type": "text",
+					"top": 139,
+					"left": 104,
+					"width": 125,
+					"height": 17,
+					"fontTheme": "main",
+					"text": "Phone number"
+				},
+				"Save#2": {
+					"type": "button",
+					"top": 175,
+					"left": 407,
+					"width": 71,
+					"height": 32,
+					"text": "Save",
+					"focusable": false,
+					"method": "ObjectMethods/Save#2.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Cancel": {
+					"type": "button",
+					"top": 175,
+					"left": 303,
+					"width": 71,
+					"height": 32,
+					"text": "Cancel",
+					"focusable": false,
+					"method": "ObjectMethods/Cancel.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"First": {
+					"type": "pictureButton",
+					"top": 10,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Previous": {
+					"type": "pictureButton",
+					"top": 65,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onLoad",
+						"onClick",
+						"onPrintingDetail"
+					]
+				},
+				"Next": {
+					"type": "pictureButton",
+					"top": 120,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Last": {
+					"type": "pictureButton",
+					"top": 175,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Delete": {
+					"type": "pictureButton",
+					"top": 224,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"Info#2": {
+					"type": "input",
+					"top": 237,
+					"left": 104,
+					"width": 374,
+					"height": 81,
+					"dataSource": "Form:C1466.info",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text1": {
+					"type": "text",
+					"top": 27,
+					"left": 104,
+					"width": 68,
+					"height": 17,
+					"fontTheme": "main",
+					"text": "ID"
+				},
+				"ID#3": {
+					"type": "input",
+					"top": 27,
+					"left": 249,
+					"width": 131,
+					"height": 16,
+					"dataSource": "Form:C1466.Directory.newItem.ID",
+					"dataSourceTypeHint": "integer",
+					"focusable": false,
+					"fill": "#C0C0C0",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad"
+					]
+				},
+				"FN#3": {
+					"type": "input",
+					"top": 55,
+					"left": 249,
+					"width": 131,
+					"height": 16,
+					"dataSource": "Form:C1466.Directory.newItem.FN",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad"
+					]
+				},
+				"LN#3": {
+					"type": "input",
+					"top": 82,
+					"left": 249,
+					"width": 131,
+					"height": 16,
+					"dataSource": "Form:C1466.Directory.newItem.LN",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Dob#3": {
+					"type": "input",
+					"top": 110,
+					"left": 249,
+					"width": 131,
+					"height": 16,
+					"dataSource": "Form:C1466.Directory.newItem.Dob",
+					"dataSourceTypeHint": "date",
+					"contextMenu": "none",
+					"dateFormat": "short",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad"
+					]
+				},
+				"PN#3": {
+					"type": "input",
+					"top": 139,
+					"left": 249,
+					"width": 131,
+					"height": 16,
+					"dataSource": "Form:C1466.Directory.newItem.PN",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onLoad"
+					]
+				},
+				"Text6": {
+					"type": "text",
+					"top": 54,
+					"left": 104,
+					"width": 99,
+					"height": 17,
+					"fontTheme": "main",
+					"text": "First name"
+				},
+				"Text7": {
+					"type": "text",
+					"top": 82,
+					"left": 104,
+					"width": 91,
+					"height": 17,
+					"fontTheme": "main",
+					"text": "Last name"
+				},
+				"Text8": {
+					"type": "text",
+					"top": 110,
+					"left": 104,
+					"width": 104,
+					"height": 17,
+					"fontTheme": "main",
+					"text": "Date of birth"
+				},
+				"Text9": {
+					"type": "text",
+					"top": 139,
+					"left": 104,
+					"width": 125,
+					"height": 17,
+					"fontTheme": "main",
+					"text": "Phone number"
+				},
+				"Save#3": {
+					"type": "button",
+					"top": 175,
+					"left": 407,
+					"width": 71,
+					"height": 32,
+					"text": "Save",
+					"focusable": false,
+					"method": "ObjectMethods/Save#3.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Cancel1": {
+					"type": "button",
+					"top": 175,
+					"left": 303,
+					"width": 71,
+					"height": 32,
+					"text": "Cancel",
+					"focusable": false,
+					"method": "ObjectMethods/Cancel1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Info#3": {
+					"type": "input",
+					"top": 237,
+					"left": 104,
+					"width": 374,
+					"height": 81,
+					"dataSource": "Form:C1466.info",
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none"
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group3": [
+				"And",
+				"Or"
+			]
+		},
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {},
+			"View 3": {
+				"objects": [
+					"First",
+					"Previous",
+					"Next",
+					"Last",
+					"Delete"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

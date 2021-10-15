@@ -1,0 +1,12 @@
+{
+	"editors": [
+		{
+			"type": "form",
+			"id": 218,
+			"formName": "ORDA"
+		},
+		{
+			"type": "explorer"
+		}
+	]
+}
