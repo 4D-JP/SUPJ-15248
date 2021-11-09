@@ -141,11 +141,11 @@ meta_Directory(Form.Directory.meta.selected; Form.Directory.meta.unselected)
 						End case 
 						
 						If ($y=0)
-							//月日だけで検査する場合
+							//月日だけで検索する場合
 							$queryParams.args[$日付]:=Add to date:C393(!00-00-00!; 2000; $m; $d)
 							$queryCriteria.push("eval((Month of(This.Dob)=Month of($1."+$日付+")) & (Day of(This.Dob)=Day of($1."+$日付+")))")
 						Else 
-							//年月日で検査する場合
+							//年月日で検索する場合
 							$queryParams.parameters[$日付]:=Add to date:C393(!00-00-00!; $y; $m; $d)
 							$queryCriteria.push(":生年月日 == :"+$日付)
 						End if 
