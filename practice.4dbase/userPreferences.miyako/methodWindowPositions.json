@@ -6,10 +6,10 @@
 		"height": 669
 	},
 	"Sources/Methods/map_wildcard.4dm": {
-		"left": 216,
-		"top": 188,
-		"width": 936,
-		"height": 862
+		"left": 40,
+		"top": 234,
+		"width": 1050,
+		"height": 846
 	},
 	"Sources/Triggers/table_1.4dm": {
 		"left": 544,
@@ -18,10 +18,10 @@
 		"height": 488
 	},
 	"Sources/Forms/ORDA/method.4dm": {
-		"left": 242,
-		"top": 238,
-		"width": 1144,
-		"height": 863
+		"left": 117,
+		"top": 229,
+		"width": 1050,
+		"height": 846
 	},
 	"Sources/Forms/ORDA/ObjectMethods/lb.Directory.4dm": {
 		"left": 407,
@@ -58,5 +58,11 @@
 		"top": 188,
 		"width": 1144,
 		"height": 863
+	},
+	"Trash/Methods/(reduce_date).4dm": {
+		"left": 813,
+		"top": 234,
+		"width": 1050,
+		"height": 846
 	}
 }

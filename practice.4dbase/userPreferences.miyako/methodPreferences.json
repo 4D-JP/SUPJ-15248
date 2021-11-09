@@ -9,13 +9,13 @@
 		"stamp": "2021-10-15T04:20:53.712Z"
 	},
 	"Sources/Methods/map_wildcard.4dm": {
-		"startSelection": 35,
-		"endSelection": 35,
-		"firstSelectedLine": 2,
-		"lastSelectedLine": 2,
+		"startSelection": 0,
+		"endSelection": 0,
+		"firstSelectedLine": 1,
+		"lastSelectedLine": 1,
 		"folding": [],
 		"bookmarks": [],
-		"stamp": "2021-10-15T04:20:53.712Z"
+		"stamp": "2021-11-09T00:14:37.926Z"
 	},
 	"Sources/Triggers/table_1.4dm": {
 		"startSelection": 0,
@@ -29,15 +29,11 @@
 	"Sources/Forms/ORDA/method.4dm": {
 		"startSelection": 0,
 		"endSelection": 0,
-		"firstSelectedLine": 103,
-		"lastSelectedLine": 103,
-		"folding": [
-			3,
-			118,
-			138
-		],
+		"firstSelectedLine": 130,
+		"lastSelectedLine": 130,
+		"folding": [],
 		"bookmarks": [],
-		"stamp": "2021-10-15T04:20:53.719Z"
+		"stamp": "2021-11-09T00:43:20.406Z"
 	},
 	"Sources/Forms/ORDA/ObjectMethods/lb.Directory.4dm": {
 		"startSelection": 9,

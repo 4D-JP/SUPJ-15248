@@ -1,12 +1,23 @@
 {
 	"editors": [
 		{
+			"type": "method",
+			"id": 2147483645,
+			"previousTabType": "form",
+			"previousTabID": 353,
+			"codeDescriptor": {
+				"type": 3,
+				"formName": "ORDA",
+				"methodPath": "/SOURCES/Forms/ORDA/method.4dm"
+			}
+		},
+		{
 			"type": "form",
-			"id": 218,
+			"id": 353,
 			"formName": "ORDA"
 		},
 		{
-			"type": "explorer"
+			"type": "structure"
 		}
 	]
 }

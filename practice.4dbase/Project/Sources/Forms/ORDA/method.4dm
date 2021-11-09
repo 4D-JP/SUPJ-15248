@@ -102,10 +102,57 @@ meta_Directory(Form.Directory.meta.selected; Form.Directory.meta.unselected)
 			$queryParams.parameters:=New object:C1471
 			$queryParams.attributes.姓:="FN"
 			$queryParams.attributes.名:="LN"
+			$queryParams.attributes.生年月日:="Dob"
 			$queryParams.attributes.電話番号:="PN"
 			$queryParams.parameters.検索文字列:=$phrases
 			
 			$queryCriteria:=New collection:C1472(":姓 IN :検索文字列"; ":名 IN :検索文字列"; ":電話番号 IN :検索文字列")
+			
+/*
+			
+日付検索の例
+			
+*/
+			
+			ARRAY LONGINT:C221($pos; 0)
+			ARRAY LONGINT:C221($len; 0)
+			
+			$queryParams.args:=New object:C1471
+			$i:=0
+			
+			For each ($value; Split string:C1554($imp; " "; sk ignore empty strings:K86:1+sk trim spaces:K86:2))
+				Case of 
+					: (Match regex:C1019("(\\d{2,4}\\D)?(\\d{1,2})\\D(\\d{1,2})"; $value; 1; $pos; $len))
+						
+						$m:=Num:C11(Substring:C12($value; $pos{2}; $len{2}))
+						$d:=Num:C11(Substring:C12($value; $pos{3}; $len{3}))
+						$i:=$i+1
+						$日付:="日付"+String:C10($i)  //値に名前をつける
+						
+						$year:=Substring:C12($value; $pos{1}; $len{1})
+						
+						Case of 
+							: (Length:C16($year)=0)
+								$y:=0  //年指定なし
+							: (Length:C16($year)=4)
+								$y:=Num:C11($year)
+							Else 
+								$y:=Num:C11($year)+2000
+						End case 
+						
+						If ($y=0)
+							//月日だけで検査する場合
+							$queryParams.args[$日付]:=Add to date:C393(!00-00-00!; 2000; $m; $d)
+							$queryCriteria.push("eval((Month of(This.Dob)=Month of($1."+$日付+")) & (Day of(This.Dob)=Day of($1."+$日付+")))")
+						Else 
+							//年月日で検査する場合
+							$queryParams.parameters[$日付]:=Add to date:C393(!00-00-00!; $y; $m; $d)
+							$queryCriteria.push(":生年月日 == :"+$日付)
+						End if 
+						
+				End case 
+				
+			End for each 
 			
 			Case of 
 				: (Form:C1466.Or_opt=1)
